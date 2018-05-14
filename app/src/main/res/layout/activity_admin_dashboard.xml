@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.hppc.mymovie.AdminDashboard">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/etUpcomingMoviesName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:ems="10"
+                android:hint="Movie Name"
+                android:inputType="textPersonName"
+                android:textColorHint="@android:color/holo_red_light"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <EditText
+                android:id="@+id/etUpcomingMoviesActor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="Actor Name"
+                android:inputType="textPersonName"
+                android:textColorHint="@android:color/holo_red_light"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/etUpcomingMoviesName"
+                app:layout_constraintTop_toBottomOf="@+id/etUpcomingMoviesName" />
+
+            <Button
+                android:id="@+id/btnUpcomingMovies"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="44dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/googleRed"
+                android:fontFamily="sans-serif"
+                android:freezesText="false"
+
+                android:text="ADD Movie"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/etUpcomingMoviesDesription"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/etUpcomingMoviesDesription"
+                app:layout_constraintTop_toBottomOf="@+id/etUpcomingMoviesDesription"
+                app:layout_constraintVertical_bias="0.875" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="68dp"
+                android:text="Add Upcoming Movies"
+
+                android:textColor="@color/googleRed"
+                android:textSize="28sp"
+                android:textStyle="bold"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.506"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/etUpcomingMoviesActress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Actress Name"
+                android:inputType="textPersonName"
+                android:textColorHint="@android:color/holo_red_light"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/etUpcomingMoviesActor"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/etUpcomingMoviesActor"
+                app:layout_constraintTop_toBottomOf="@+id/etUpcomingMoviesActor"
+                android:layout_marginRight="8dp" />
+
+            <EditText
+                android:id="@+id/etUpcomingMoviesDesription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Description"
+                android:inputType="textPersonName"
+                android:textColorHint="@android:color/holo_red_light"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/etUpcomingMoviesActress"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/etUpcomingMoviesActress"
+                app:layout_constraintTop_toBottomOf="@+id/etUpcomingMoviesActress"
+                android:layout_marginLeft="8dp" />
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

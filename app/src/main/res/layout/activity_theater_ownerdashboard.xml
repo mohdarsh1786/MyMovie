@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.example.hppc.mymovie.TheaterOwnerdashboard">
+
+    <EditText
+        android:id="@+id/etTheaterName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="Theater Name"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/googleRed"
+        app:layout_constraintEnd_toEndOf="@+id/tvAddTheater"
+        app:layout_constraintStart_toStartOf="@+id/tvAddTheater"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddTheater"
+        android:layout_marginLeft="8dp" />
+
+    <EditText
+        android:id="@+id/etTheaterCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:textColorHint="@color/googleRed"
+
+        android:ems="10"
+        android:hint="Theater City"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/etTheaterName"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etTheaterName"
+        app:layout_constraintTop_toBottomOf="@+id/etTheaterName"
+        android:layout_marginLeft="8dp" />
+
+    <Button
+        android:id="@+id/btnAddTheater"
+        android:layout_width="212dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+
+        android:background="@color/googleRed"
+        android:text="Add Theater"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/etTheaterCity"
+        app:layout_constraintStart_toStartOf="@+id/etTheaterCity"
+        app:layout_constraintTop_toBottomOf="@+id/etTheaterCity" />
+
+    <TextView
+        android:id="@+id/tvAddTheater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        android:text="Add Theater Details"
+        android:textColor="@color/googleRed"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAddMovies"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="116dp"
+        android:layout_marginStart="8dp"
+
+        android:layout_marginTop="32dp"
+        android:background="@color/googleRed"
+        android:text="Add Movies"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnAddTheater"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btnAddTheater"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddTheater"
+        app:layout_constraintVertical_bias="0.823"
+        android:layout_marginLeft="8dp" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hppc.mymovie.Theater_owner.OwnerAddShow"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/btnPickDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="76dp"
+        android:text="Select The show date"
+        android:textColor="@color/googleRed"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/etTimeShow1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBoxShow1"
+        android:layout_width="87dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="184dp"
+        android:text="Show1"
+        android:textColor="@color/googleRed"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="16dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxShow2"
+        android:layout_width="87dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/googleRed"
+        android:textStyle="bold"
+        android:text="Show2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxShow1" />
+
+    <CheckBox
+        android:id="@+id/checkBoxShow3"
+        android:layout_width="87dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Show3"
+        android:textColor="@color/googleRed"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxShow2" />
+
+    <CheckBox
+        android:id="@+id/checkBoxShow4"
+        android:layout_width="87dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Show4"
+        android:textColor="@color/googleRed"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxShow3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/etTimeShow1"
+        android:layout_width="87dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="184dp"
+        android:ems="10"
+        android:hint="Time"
+
+        android:inputType="textPersonName"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/etNumberofSeat1"
+        app:layout_constraintHorizontal_bias="0.322"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxShow1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="36dp" />
+
+    <EditText
+        android:id="@+id/etTimeShow2"
+        android:layout_width="87dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Time"
+        android:inputType="textPersonName"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/etNumberofSeat2"
+        app:layout_constraintHorizontal_bias="0.644"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxShow2"
+        app:layout_constraintTop_toBottomOf="@+id/etTimeShow1" />
+
+    <EditText
+        android:id="@+id/etTimeShow3"
+        android:layout_width="87dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Time"
+        android:inputType="textPersonName"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/etNumberofSeat3"
+        app:layout_constraintHorizontal_bias="0.644"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxShow3"
+        app:layout_constraintTop_toBottomOf="@+id/etTimeShow2" />
+
+    <EditText
+        android:id="@+id/etTimeShow4"
+        android:layout_width="87dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Time"
+        android:inputType="textPersonName"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/etNumberofSeat4"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxShow4"
+        app:layout_constraintTop_toBottomOf="@+id/etTimeShow3" />
+
+    <EditText
+        android:id="@+id/etNumberofSeat1"
+        android:layout_width="87dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="No of Seat"
+        android:inputType="textPersonName"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/etNumberofSeat2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/etNumberofSeat2"
+        android:layout_width="87dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="No of Seat"
+        android:inputType="textPersonName"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/etNumberofSeat3"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etNumberofSeat3"
+        android:layout_width="87dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="No of Seat"
+        android:inputType="textPersonName"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/etNumberofSeat4"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etNumberofSeat4"
+        android:layout_width="87dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="88dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="No of Seat"
+        android:inputType="textPersonName"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnAddAllshow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Add Show"
+        android:textColor="@color/googleRed"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTimeShow4"
+        app:layout_constraintVertical_bias="0.652" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Add Show details"
+        android:textSize="25sp"
+        android:textColor="@color/googleRed"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnPickDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

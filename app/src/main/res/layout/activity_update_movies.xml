@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hppc.mymovie.Theater_owner.UpdateMovies"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Spinner
+        android:id="@+id/spnUpdateMovie"
+        android:layout_width="251dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/spnUpdateTheater"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toStartOf="@+id/spnUpdateTheater"
+        app:layout_constraintTop_toBottomOf="@+id/spnUpdateTheater" />
+
+    <Spinner
+        android:id="@+id/spnUpdateTheater"
+        android:layout_width="250dp"
+        android:layout_height="31dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUpdateMovie" />
+
+    <EditText
+        android:id="@+id/etUpdatePrice"
+        android:layout_width="250dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Price"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="@+id/spnUpdateMovie"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/spnUpdateMovie"
+        app:layout_constraintTop_toBottomOf="@+id/spnUpdateMovie" />
+
+    <Button
+        android:id="@+id/btnUpdateMovie"
+        android:layout_width="242dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Update"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="@+id/etUpdatePrice"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="@+id/etUpdatePrice"
+        app:layout_constraintTop_toBottomOf="@+id/etUpdatePrice" />
+
+    <TextView
+        android:id="@+id/tvUpdateMovie"
+        android:layout_width="168dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="88dp"
+        android:text="Update Movie"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

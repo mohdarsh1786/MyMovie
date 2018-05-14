@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.hppc.mymovie.Owner_info"
+    tools:layout_editor_absoluteY="81dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:weightSum="2">
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+          android:layout_marginLeft="8dp"
+            android:paddingRight="1dp"
+            android:text="Name"
+            android:weightSum="1"
+            android:textColor="@color/googleRed"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/tvNameforVerification"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:paddingRight="120dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="Namebydb"
+            android:weightSum="1"
+            android:textColor="@color/googleGreen"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="15dp">
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:text="Email"
+
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:paddingRight="1dp"
+        android:textColor="@color/googleRed"
+        android:textSize="20sp"
+        android:textStyle="bold"
+         />
+
+    <TextView
+        android:id="@+id/tvemailforverification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Emailbydb"
+        android:paddingRight="100dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:textColor="@color/googleGreen"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+</LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp">
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+
+        android:text="Mobile Number"
+        android:textColor="@color/googleRed"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvMobileforverification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="NumberBydb"
+        android:paddingRight="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:textColor="@color/googleGreen"
+        android:textSize="18sp"
+        android:textStyle="bold"
+   />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:weightSum="2"
+       >
+
+        <Button
+            android:id="@+id/btnRejectRequest"
+            android:layout_width="131dp"
+            android:layout_height="50dp"
+            android:background="@color/googleRed"
+            android:layout_marginLeft="15dp"
+            android:text="Reject"
+            android:weightSum="1"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnVerifyRequest"
+            android:layout_width="124dp"
+            android:layout_height="50dp"
+         android:layout_marginLeft="15dp"
+            android:background="@color/googleGreen"
+            android:text="Verify"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:weightSum="1"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="208dp"
+            tools:layout_editor_absoluteY="192dp" />
+    </LinearLayout>
+</android.support.v7.widget.LinearLayoutCompat>

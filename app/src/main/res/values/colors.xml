@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303f9f</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="googleBlue">#4885ed</color>
+    <color name="googleRed">#db3236</color>
+    <color name="white">#ffffff</color>
+    <color name="googleGreen">#3cba54</color>
+    <color name="googleYellow">#f4c20d</color>
+    <color name="googlenewllow">#050505</color>
+</resources>

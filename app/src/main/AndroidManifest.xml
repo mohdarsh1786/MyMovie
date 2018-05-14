@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hppc.mymovie">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Registration" />
+        <activity android:name=".movieListAdapter" />
+        <activity android:name=".movies_info" />
+        <activity android:name=".StuRegistration" />
+        <activity android:name=".Userdashboard2" />
+        <activity android:name=".AdminLogin" />
+        <activity android:name=".Theater_owner.TheaterOwnerLogin" />
+        <activity android:name=".TheaterOwnerSignup" />
+        <activity android:name=".AdminDashboard" />
+        <activity android:name=".TheaterOwnerdashboard" />
+        <activity android:name=".Theater_owner.OwnerAddMovies" />
+        <activity android:name=".Theater_owner.OwnerAddShow" />
+        <activity android:name=".Theater_owner.SessionManagement" />
+        <activity android:name=".Theater_owner.UpdateMovies" />
+        <activity android:name=".User.SelectDate" />
+        <activity android:name=".User.User_TheaterDetails" />
+        <activity android:name=".User.TheaterList_Adapter" />
+        <activity android:name=".User.Theater_info" />
+        <activity android:name=".change_button_name" />
+        <activity android:name=".User.Select_Seat" />
+        <activity android:name=".User.Book_show" />
+        <activity android:name=".Theater_owner.Delete_Movie_from_Theater" />
+        <activity android:name=".Delete_Movies" />
+        <activity android:name=".Owner_Verification" />
+        <activity android:name=".Owner_listAdapter_forverification" />
+        <activity android:name=".Owner_info" />
+        <activity android:name=".Theater_owner.Owner_Delete_Movie" />
+        <activity android:name=".Theater_owner.Owner_delete_movie" />
+        <activity android:name=".Theater_owner.movies_delete_info" />
+        <activity android:name=".User.Forget_Password" />
+        <activity android:name=".User.SelectSeat" />
+        <activity android:name=".User.NewPassword" />
+        <activity android:name=".User.SelectSeats" />
+        <activity android:name=".User.SeatSelect" />
+        <activity android:name=".User.GetSeatSelectList" />
+        <activity android:name=".User.CancelTicket" />
+        <activity android:name=".User.TicketCancelinfo" />
+        <activity android:name=".User.UserCancelTicketAdapter" />
+        <activity android:name=".User.BookingSuccessfull"></activity>
+    </application>
+
+</manifest>

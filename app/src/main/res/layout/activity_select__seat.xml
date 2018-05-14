@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hppc.mymovie.User.Select_Seat">
+
+
+    <TextView
+        android:id="@+id/tvNoofSeatVacant"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="136dp"
+        android:text="Seat Left -:"
+        android:textColor="@color/googleRed"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="28dp" />
+
+    <TextView
+        android:id="@+id/tvTicketPice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:text="Ticket Price -:"
+        android:textColor="@color/googleRed"
+        android:textSize="18sp"
+        android:textStyle="bold"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNoofSeatVacant" />
+
+    <Spinner
+        android:id="@+id/spinner_NumberofSeat"
+        android:layout_width="83dp"
+        android:layout_height="31dp"
+        android:layout_marginEnd="104dp"
+
+        android:layout_marginTop="24dp"
+        android:entries="@array/noofsetas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTicketPrice" />
+
+    <TextView
+        android:id="@+id/tvTotalPrices1"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="8dp"
+        android:text="Total Ticket Price -:"
+        android:textColor="@color/googleRed"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_book"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_NumberofSeat"
+        app:layout_constraintVertical_bias="0.439"
+        android:layout_marginLeft="36dp" />
+
+    <TextView
+        android:id="@+id/tvNoOfSeat"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:text="NofSeat"
+        android:textColor="@color/googleGreen"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.322"
+        app:layout_constraintStart_toEndOf="@+id/tvNoofSeatVacant"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/tvTicketPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="price"
+        android:textColor="@color/googleGreen"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.195"
+        app:layout_constraintStart_toEndOf="@+id/tvTicketPice"
+        app:layout_constraintTop_toBottomOf="@+id/tvNoOfSeat" />
+
+    <TextView
+        android:id="@+id/tvTotalPrice"
+        android:layout_width="68dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="36dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TPrice"
+        android:textColor="@color/googleGreen"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_book"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tvTotalPrices1"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_NumberofSeat"
+        app:layout_constraintVertical_bias="0.473"
+        tools:ignore="NotSibling" />
+
+    <Button
+        android:id="@+id/btn_book"
+        android:layout_width="233dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="72dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/googleRed"
+        android:text="Book"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="68dp"
+        android:text="Select Number Of Seat"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/googleRed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:text="Select No of Seat"
+        android:textColor="@color/googleRed"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvTotalPrices1"
+        app:layout_constraintEnd_toStartOf="@+id/spinner_NumberofSeat"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTicketPice"
+        app:layout_constraintVertical_bias="0.0" />
+</android.support.constraint.ConstraintLayout>

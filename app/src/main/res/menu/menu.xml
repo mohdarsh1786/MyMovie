@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/adminMenu"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="Admin Login"
+        >
+    </item>
+    <item
+        android:id="@+id/theaterownerMenu"
+        android:orderInCategory="200"
+        app:showAsAction="never"
+        android:title="Theater Owner Login"
+        >
+    </item>
+</menu>

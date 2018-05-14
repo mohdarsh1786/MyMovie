@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hppc.mymovie.User.TicketCancelinfo">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/googlenewllow">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Theater Name"
+                    android:textSize="16dp"
+                    android:textColor="@color/googleRed"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/textView37"
+                    app:layout_constraintStart_toStartOf="@+id/textView37"
+                    app:layout_constraintTop_toBottomOf="@+id/textView37"
+                    android:layout_marginLeft="8dp" />
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Movie Name"
+                    android:textSize="16dp"
+                    android:textColor="@color/googleRed"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/textView29"
+                    app:layout_constraintStart_toStartOf="@+id/textView29"
+                    app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Show Time"
+                    android:textSize="16dp"
+                    android:textColor="@color/googleRed"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/textView31"
+                    app:layout_constraintStart_toStartOf="@+id/textView31"
+                    app:layout_constraintTop_toBottomOf="@+id/textView31"
+                    android:layout_marginRight="8dp" />
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Show Date"
+                    android:textSize="16dp"
+                    android:textColor="@color/googleRed"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/textView33"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/textView33"
+                    app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Seat Number"
+                    android:textSize="16dp"
+                    android:textColor="@color/googleRed"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/textView35"
+                    app:layout_constraintStart_toStartOf="@+id/textView35"
+                    app:layout_constraintTop_toBottomOf="@+id/textView35"
+                    android:layout_marginRight="8dp" />
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="36dp"
+                    android:layout_marginTop="28dp"
+                    android:text="Ticket Id"
+                    android:textSize="16dp"
+                    android:textColor="@color/googleRed"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginLeft="36dp" />
+
+    <TextView
+        android:id="@+id/tvBookTicketid"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginTop="28dp"
+
+        android:text="BookTicketId"
+        android:textColor="@color/googleGreen"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="112dp" />
+
+    <TextView
+        android:id="@+id/tvBookTheaterName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="BookTheaterName"
+        android:textColor="@color/googleGreen"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tvBookTicketid"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="@+id/tvBookTicketid"
+        app:layout_constraintTop_toBottomOf="@+id/tvBookTicketid"
+        android:layout_marginLeft="8dp" />
+
+                <TextView
+                    android:id="@+id/tvBookMovieName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="BookMovieName"
+                    android:textSize="16dp"
+                    android:textColor="@color/googleGreen"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/tvBookTheaterName"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/tvBookTheaterName"
+                    app:layout_constraintTop_toBottomOf="@+id/tvBookTheaterName" />
+
+                <TextView
+                    android:id="@+id/tvBookShowTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="BookShowTime"
+                    android:textSize="16dp"
+                    android:textColor="@color/googleGreen"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/tvBookMovieName"
+                    app:layout_constraintStart_toStartOf="@+id/tvBookMovieName"
+                    app:layout_constraintTop_toBottomOf="@+id/tvBookMovieName" />
+
+                <TextView
+                    android:id="@+id/tvBookShowDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="BookShowDate"
+                    android:textSize="16dp"
+                    android:textColor="@color/googleGreen"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/tvBookShowTime"
+                    app:layout_constraintStart_toStartOf="@+id/tvBookShowTime"
+                    app:layout_constraintTop_toBottomOf="@+id/tvBookShowTime"
+                    android:layout_marginLeft="8dp" />
+
+                <TextView
+                    android:id="@+id/tvBookSeatNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="BookSeatNumber"
+                    android:textSize="16dp"
+                    android:textColor="@color/googleGreen"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/tvBookShowDate"
+                    app:layout_constraintHorizontal_bias="0.869"
+                    app:layout_constraintStart_toStartOf="@+id/tvBookShowDate"
+                    app:layout_constraintTop_toBottomOf="@+id/tvBookShowDate"
+                    android:layout_marginLeft="8dp" />
+
+                <Button
+                    android:id="@+id/btnCancelTicketdetails"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="28dp"
+                    android:background="@color/googleRed"
+                    android:text="Cancel Ticket"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvBookSeatNo" />
+            </android.support.constraint.ConstraintLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

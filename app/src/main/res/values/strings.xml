@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">MyMovie</string>
+    <string name="show1">show1</string>
+    <string name="show2">show2</string>
+    <string name="show3">show3</string>
+    <string name="show4">show4</string>
+
+    <string-array name="noofsetas">
+
+        <item>"1"</item>
+        <item>"2"</item>
+        <item>"3"</item>
+        <item>"4"</item>
+        <item>"5"</item>
+        <item>"6"</item>
+        <item>"7"</item>
+        <item>"8"</item>
+        <item>"9"</item>
+        <item>"10"</item>
+    </string-array>
+</resources>

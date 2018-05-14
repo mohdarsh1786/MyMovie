@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="com.example.hppc.mymovie.User.Theater_info"
+    tools:layout_editor_absoluteY="81dp">
+
+  <android.support.constraint.ConstraintLayout
+      android:layout_width="405dp"
+      android:layout_height="220dp"
+      android:background="@color/googlenewllow">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:paddingTop="2dp"
+        android:text="Name"
+        android:textColor="@color/googleGreen"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/show1"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:background="@color/googleRed"
+        android:text="@string/show1"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+    <Button
+        android:id="@+id/show2"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:background="@color/googleRed"
+        android:text="@string/show2"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/show1"
+        app:layout_constraintStart_toEndOf="@+id/show1"
+        app:layout_constraintTop_toTopOf="@+id/show1"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/show3"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_weight="1"
+        android:background="@color/googleRed"
+        android:text="@string/show3"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/show1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/show1"
+        app:layout_constraintTop_toBottomOf="@+id/show1" />
+
+    <Button
+        android:id="@+id/show4"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_weight="1"
+        android:background="@color/googleRed"
+        android:text="@string/show4"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/show3"
+        app:layout_constraintEnd_toEndOf="@+id/show2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/show2"
+        app:layout_constraintTop_toTopOf="@+id/show3" />
+  </android.support.constraint.ConstraintLayout>
+</LinearLayout>

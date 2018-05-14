@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hppc.mymovie.Theater_owner.OwnerAddMovies"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <Spinner
+                android:id="@+id/spinnerTheater"
+                android:layout_width="230dp"
+                android:layout_height="35dp"
+
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <Spinner
+                android:id="@+id/spinnerMovies"
+                android:layout_width="233dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/spinnerTheater"
+                app:layout_constraintStart_toStartOf="@+id/spinnerTheater"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerTheater" />
+
+            <EditText
+                android:id="@+id/etMoviePrice"
+                android:layout_width="236dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="Price"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/googleRed"
+                app:layout_constraintEnd_toEndOf="@+id/spinnerMovies"
+                app:layout_constraintHorizontal_bias="0.727"
+                app:layout_constraintStart_toStartOf="@+id/spinnerMovies"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerMovies" />
+
+            <Button
+                android:id="@+id/btnAddShow"
+                android:layout_width="237dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:background="@color/googleRed"
+                android:text="Add Show"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvshow3" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="40dp"
+                android:text="Add Movies "
+                android:textColor="@color/googleRed"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="45dp"
+                android:layout_height="19dp"
+                android:layout_marginTop="20dp"
+                android:text="Show1"
+                android:textColor="@color/googleRed"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/etMoviePrice"
+                app:layout_constraintTop_toBottomOf="@+id/etMoviePrice" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="20dp"
+                android:text="show2"
+                android:textStyle="bold"
+                android:textColor="@color/googleRed"
+                app:layout_constraintEnd_toEndOf="@+id/etMoviePrice"
+                app:layout_constraintTop_toBottomOf="@+id/etMoviePrice" />
+
+            <TextView
+                android:id="@+id/tvshow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:text="setshow1"
+                app:layout_constraintEnd_toEndOf="@+id/textView16"
+                app:layout_constraintHorizontal_bias="0.458"
+                app:layout_constraintStart_toStartOf="@+id/textView16"
+                app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+            <TextView
+                android:id="@+id/tvshow2"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="24dp"
+                android:text="setshow2"
+                app:layout_constraintEnd_toEndOf="@+id/textView18"
+                app:layout_constraintHorizontal_bias="0.75"
+                app:layout_constraintStart_toStartOf="@+id/textView18"
+                app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:text="show3"
+                android:textStyle="bold"
+                android:textColor="@color/googleRed"
+                app:layout_constraintEnd_toEndOf="@+id/tvshow1"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tvshow1"
+                app:layout_constraintTop_toBottomOf="@+id/tvshow1"
+                android:layout_marginLeft="8dp" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:text="show4"
+                android:textStyle="bold"
+                android:textColor="@color/googleRed"
+                app:layout_constraintEnd_toEndOf="@+id/tvshow2"
+                app:layout_constraintStart_toStartOf="@+id/tvshow2"
+                app:layout_constraintTop_toBottomOf="@+id/tvshow2" />
+
+            <TextView
+                android:id="@+id/tvshow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:text="setshow3"
+                app:layout_constraintEnd_toEndOf="@+id/textView22"
+                app:layout_constraintHorizontal_bias="0.571"
+                app:layout_constraintStart_toStartOf="@+id/textView22"
+                app:layout_constraintTop_toBottomOf="@+id/textView22"
+                android:layout_marginLeft="8dp" />
+
+            <TextView
+                android:id="@+id/tvshow4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:text="setshow4"
+                app:layout_constraintEnd_toEndOf="@+id/textView23"
+                app:layout_constraintHorizontal_bias="0.642"
+                app:layout_constraintStart_toStartOf="@+id/textView23"
+                app:layout_constraintTop_toBottomOf="@+id/textView23" />
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>
